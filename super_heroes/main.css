@@ -1,0 +1,90 @@
+body {
+    background-image: url("batman2.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 1em;
+    color: white;
+}
+
+.bg {
+    
+}
+
+header {
+    width: 100%;
+
+}
+
+    .page-title {
+        text-align: center;
+    }
+
+main {
+    width: 90%;
+}
+
+    #movie-list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .movie-container {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+    }
+
+        .movie-title {
+            font-size: 2em;
+            font-weight: bold;
+            text-shadow: 3px 3px 4px black;
+            padding: 1em;
+        }
+
+        .move-information {
+            text-shadow: 3px 3px 4px black;
+        }
+
+            .movie-modal-container {
+                position: absolute;
+                background-attachment: fixed;
+                background-size: cover;
+                background-position: center;
+                display: flex;
+                flex-wrap: wrap;
+                width: 90%;
+                left: 5%;
+                max-width: 1080px;
+                margin: 0 auto;
+            }
+
+                .
+
+
+
+        .movie-poster {
+            box-shadow: 1px 1px 10px 2px rgba(255, 255, 255, 0.3);
+        }
+
+footer {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.3);
+    padding: 3em;
+}
+
+@media screen and (max-width: 780px) {
+
+    .movie-title {
+        width: 100%;
+        text-align: center;
+        font-size: 2em;
+        font-weight: normal;
+        text-shadow: 3px 3px 1px black;
+    }
+
+    .movie-poster {
+        margin: 0 auto;
+    }
+}
