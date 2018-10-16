@@ -4,12 +4,7 @@ body {
     background-size: cover;
     background-position: center;
     margin: 0;
-    padding: 1em;
     color: white;
-}
-
-.bg {
-    
 }
 
 header {
@@ -23,11 +18,13 @@ header {
 
 main {
     width: 90%;
+    margin: 0 auto;
 }
 
     #movie-list {
         display: flex;
         flex-wrap: wrap;
+        margin: 0 auto;
     }
 
     .movie-container {
@@ -47,22 +44,66 @@ main {
             text-shadow: 3px 3px 4px black;
         }
 
+
+        .modal {
+            position: fixed;
+            top: 1em;
+            display: flex;
+            flex-wrap: wrap;
+            width: 90%;
+        }
+        
             .movie-modal-container {
-                position: absolute;
-                background-attachment: fixed;
                 background-size: cover;
                 background-position: center;
+                background-repeat: no-repeat;
                 display: flex;
                 flex-wrap: wrap;
-                width: 90%;
-                left: 5%;
+                justify-self: center;
+                align-self: center;
                 max-width: 1080px;
-                margin: 0 auto;
             }
 
-                .
 
 
+                .movie-modal-title {
+                    text-align: center;
+                    font-size: 2em;
+                    width: 100%;
+                    background: rgba(0, 0, 0, .25);
+                }
+
+                .close {
+                    position: absolute;
+                    top: 1em;
+                    right: 1em;
+                }
+
+                .movie-modal-information {
+                    background: rgba(0, 0, 0, .5);
+                    padding: 1em;
+                }
+
+                .movie-modal-credits {
+                    background: rgba(0, 0, 0, .5);
+                    padding: 0.5em;
+                }
+
+                .movie-modal-plot {
+                    text-align: center;
+                    padding: 1em;
+                    background: rgba(0, 0, 0, .35);
+                }
+
+                .movie-modal-awards {
+                    background: rgba(0, 0, 0, .7);
+                    padding: 1em;
+                }
+
+                .movie-modal-rating {
+                    padding: 1em;
+                    background: rgba(0, 0, 0, .35);
+                }
 
         .movie-poster {
             box-shadow: 1px 1px 10px 2px rgba(255, 255, 255, 0.3);
@@ -82,6 +123,22 @@ footer {
         font-size: 2em;
         font-weight: normal;
         text-shadow: 3px 3px 1px black;
+    }
+
+    .movie-modal-container {
+        width: 75%;
+        margin: 0 auto;
+    }
+
+    .movie-modal-information {
+        width: 100%;
+    }
+    .movie-modal-title {
+        font-size: 1.5em;
+    }
+
+    .movie-modal-plot {
+        
     }
 
     .movie-poster {
